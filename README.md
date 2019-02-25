@@ -7,9 +7,9 @@ The federated authentication component for rOCCI-server.
 
 Keystorm allows users to authenticate using several protocols, currently
 OIDC(OpenID Connect) and VOMS(Virtual Organization Membership Service). After
-successful authentication, user is given an unscoped token that is generated
-from credentials received from authentication protocol. User can use unscoped
-token to generate scoped token that is used to access cloud service.
+successful authentication, the user is given an unscoped token that is generated
+from credentials received from a valid authentication protocol. User can use the unscoped
+token to generate a scoped token that is used to access a cloud service.
 
 # Requirements
 - Ruby 2.2.7+
@@ -17,7 +17,7 @@ token to generate scoped token that is used to access cloud service.
 - Memcache
 
 # Installation
-In production Keystorm must *NEVER* be accessible remotly. It should run under
+In production Keystorm must *NEVER* be accessible remotely. It should run under an
 Apache2 server that handles authentication and forwards credentials to Keystorm.
 
 ## Apache2
